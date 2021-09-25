@@ -8,20 +8,33 @@
 <body>
   
 <div class="container">
-    <label class="billLabel" for="bill">Bill</label>
-    <input type="text" class="inputBillLabelText" id="bill" name="bill">
-    <label for="tipPercentage">Select Tip %</label>
-    <button class="" name="tip5Percent">5 %</button>
-    <button class="" name="tip10Percent">10 %</button>
-    <button class="" name="tip15Percent">15 %</button>
-    <button class="" name="tip25Percent">25 %</button>
-    <button class="" name="tip50Percent">50 %</button>
-    <input type="text" id="customTipPercent">
-    <label for="noOfPeople">Number of People</label>
-    <input type="text" name="noOfPeople">
-    <input type="tipAmount" name="tipAmountPerPerson">
+    <div class="form-group">
+        <label for="customerBill" class="billLabel">Bill</label>
+        <input type="text" id="customerBill" name="bill">
+    </div>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <label for="tipPercentage">Select Tip %</label><br>
+            <button type="button" name="tip5Percent" class="splitterTipButton btn-lg">5 %</button>
+            <button type="button" name="tip10Percent" class="splitterTipButton btn-lg">10 %</button>
+            <button type="button" name="tip15Percent" class="splitterTipButton btn-lg">15 %</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <button type="button" name="tip25Percent" class="splitterTipButton btn-lg">25 %</button>
+            <button type="button" name="tip50Percent" class="splitterTipButton btn-lg">50 %</button>
+            <input  type="text"   id="customtipPercentage" placeholder="Custom">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="noOfPeople">Number of People</label><br>
+        <input type="number" id="noOfPeople" name="noOfPeople">
+    </div>
+<!--     <input type="tipAmount" name="tipAmountPerPerson">
     <input type="totalAmountPerPerson" name="totalAmountPerPerson">
-</div>
+ -->
 
+</div>
 </body>
 </html>

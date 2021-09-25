@@ -10,9 +10,31 @@ label {
 input {
   color: hsl(183, 100%, 15%);
   font-weight: 700;
+  background-color: hsl(189, 41%, 97%);
   text-align: right;
 }
-#bill {
+#customerBill {
   background: url("../images/icon-dollar.svg") left no-repeat;
   padding-left: 17px;
+  background-color: hsl(189, 41%, 97%);
+}
+
+.splitterTipButton {
+  color: hsl(0, 0%, 100%);
+  background: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+.splitterTipButton:focus {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.splitterTipButton:selected {
+  color: hsl(0, 0%, 100%);
+}
+#customTipPercentage {
+  text-align: center;
+  width: 25%;
+}
+#noOfPeople {
+  background: url("../images/icon-person.svg") left no-repeat;
 }
